@@ -444,6 +444,29 @@ footer .back-to-top:hover {
 .modal .close:focus {
     color: #00e68a;
 }
+#work-experience {
+    padding: 20px;
+    
+    margin-top: 20px;
+}
+
+#work-experience h2 {
+    margin-bottom: 10px;
+}
+
+#work-experience .experience {
+    margin-bottom: 20px;
+}
+
+#work-experience .experience h3 {
+    font-size: 1.5em;
+    
+}
+
+#work-experience .experience p {
+    font-size: 1em;
+    
+}
 
 .modal-content {
     width: 80%;
