@@ -66,3 +66,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('https://alfa-leetcode-api.onrender.com/userProfile/nick007sbt');
+        const data = await response.json();
+        
+    
+        document.getElementById('totalSolved').textContent = data.totalSolved;
+        document.getElementById('easySolved').textContent = data.easySolved;
+        document.getElementById('mediumSolved').textContent = data.mediumSolved;
+        document.getElementById('hardSolved').textContent = data.hardSolved;
+        
+        const totalSub = data.totalSubmissionNum.find(d => d.difficulty === 'All').submissions;
+        const acSub = data.acSubmissionNum.find(d => d.difficulty === 'All').submissions;
+        const acRate = ((acSub / totalSub) * 100).toFixed(1);
+        
+        document.getElementById('totalSubmissions').textContent = totalSub;
+        document.getElementById('acceptedSubmissions').textContent = acSub;
+        document.getElementById('acRate').textContent = `${acRate}%`;
+        document.getElementById('globalRank').textContent = `#${data.ranking.toLocaleString()}`;
+
+    } catch (error) {
+        console.error('Error fetching LeetCode stats:', error);
+    }
+});

@@ -12,7 +12,7 @@
 <header>
     <div class="parallax-img"></div>
     <h1>Nicolò Marotta</h1>
-    <p>Aspirant Software Engineer</p>
+    <p>Software Developer</p>
     <a href="#contact">Contact Me</a>
     <div class="scroll-down" onclick="scrollToSection('#about')">
         Scroll Down
@@ -23,8 +23,9 @@
 <nav>
     <a href="#about">About Me</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
     <a href="#work-experience">Work Experience</a>
+    <a href="#coding-stats">Leetcode Stats</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -32,73 +33,9 @@
     <h2>About Me</h2>
     <div class="bio">
         <img src="assets/pp.jpg" alt="Nicolò Marotta">
-        <h2>Aspirant Software Engineer | Student Developer</h2>
+        <h2>Software Engineer | Student Developer</h2>
         <p>I am an aspiring software engineer with a strong passion for technology and problem-solving. I am looking for opportunities where I can apply my learnings in real-life situations and am open to diverse profiles where I can develop myself professionally. Feel free to reach out to me for any potential collaborations or job opportunities.</p>
     </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="carousel">
-        <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-item" style="--i:2;">
-                <h3>Crypto Price Prediction using LSTM</h3>
-                <p>A project utilizing LSTM Neural Network and Flask API to predict cryptocurrency prices. <a href="https://github.com/Darknick007/Crypto-Price-Prediction-using-LSTM-Neural-Network-and-Flask-API" target="_blank">View Project</a></p>
-                <div class="thumbnail" data-video="V7KiO0bNDUE">
-                    <img src="assets/image1.png" alt="Crypto Price Prediction Thumbnail">
-                    <div class="play-button"></div>
-                </div>
-            </div>
-            <div class="carousel-item" style="--i:1;">
-                <h3>Tkinter DB Login</h3>
-                <p>A simple Tkinter-based application for database login management. <a href="https://github.com/Darknick007/Tkinter_Db_Login" target="_blank">View Project</a></p>
-                <div class="thumbnail" data-video="S9_eiL_j8bU">
-                    <img src="assets/image2.png" alt="Tkinter DB Login Thumbnail">
-                    <div class="play-button"></div>
-                </div>
-            </div>
-            <div class="carousel-item" style="--i:0;">
-                <h3>Aim Trainer</h3>
-                <p>An aim training application built to enhance your accuracy and speed. <a href="https://github.com/Darknick007/Aimtrainer" target="_blank">View Project</a></p>
-                <div class="thumbnail" data-video="FgzX8SddStQ">
-                    <img src="assets/image3.png" alt="Aim Trainer Thumbnail">
-                    <div class="play-button"></div>
-                </div>
-            </div>
-
-        </div>
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-    </div>
-</section>
-
-<div id="videoModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <iframe id="videoFrame" width="100%" height="400" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-
-<section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>
-            <img src="assets/html.png" alt="HTML">
-            <p>HTML</p>
-        </li>
-        <li>
-            <img src="assets/css2.png" alt="CSS">
-            <p>CSS</p>
-        </li>
-        <li>
-            <img src="assets/javasc.png" alt="JavaScript">
-            <p>JavaScript</p>
-        </li>
-        <li>
-            <img src="assets/python.png" alt="Python">
-            <p>Python</p>
-        </li>
-    </ul>
 </section>
 <section id="work-experience">
     <h2>Work Experience</h2>
@@ -122,10 +59,126 @@
         </p>
     </div>
 </section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item" style="--i:0;">
+                <h3>"This" E-commerce</h3>
+                <p>A project that utilizes multiple APIs with the goal of creating a complete store. <a href="g" target="_blank">View Project</a></p>
+                <div class="thumbnail" data-video="">
+                    <img src="" alt="">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+            <div class="carousel-item" style="--i:1;">
+                <h3>Tkinter DB Login</h3>
+                <p>A simple Tkinter-based application for database login management. <a href="https://github.com/Nick-Maro/Tkinter_Db_Login" target="_blank">View Project</a></p>
+                <div class="thumbnail" data-video="S9_eiL_j8bU">
+                    <img src="assets/image2.png" alt="Tkinter DB Login Thumbnail">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+            <div class="carousel-item" style="--i:2;">
+                <h3>Aim Trainer</h3>
+                <p>An aim training application built to enhance your accuracy and speed. <a href="https://github.com/Nick-Maro/Aimtrainer" target="_blank">View Project</a></p>
+                <div class="thumbnail" data-video="FgzX8SddStQ">
+                    <img src="assets/image3.png" alt="Aim Trainer Thumbnail">
+                    <div class="play-button"></div>
+                </div>
+            </div>
+        </div>
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+</section>
+
+<div id="videoModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe id="videoFrame" width="100%" height="400" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</div>
+<section id="coding-stats">
+    <h2>LeetCode Stats</h2>
+    
+    <div class="stats-grid">
+        <div class="cyber-card">
+            <div class="glow-border"></div>
+            <div class="stats-content">
+                <h3><span class="neon-text">❯</span> Total Solved</h3>
+                <div class="cyber-number" id="totalSolved">66</div>
+                <div class="difficulty-breakdown">
+                    <div class="diff-item">
+                        <span class="neon-text easy">EASY</span>
+                        <span id="easySolved">49</span>
+                    </div>
+                    <div class="diff-item">
+                        <span class="neon-text medium">MEDIUM</span>
+                        <span id="mediumSolved">15</span>
+                    </div>
+                    <div class="diff-item">
+                        <span class="neon-text hard">HARD</span>
+                        <span id="hardSolved">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cyber-card">
+            <div class="glow-border"></div>
+            <div class="stats-content">
+                <h3><span class="neon-text">❯</span> Submissions</h3>
+                <div class="submission-stats">
+                    <div class="stat">
+                        <span class="stat-label">TOTAL</span>
+                        <span class="stat-value" id="totalSubmissions">187</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">ACCEPTED</span>
+                        <span class="stat-value" id="acceptedSubmissions">92</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">AC RATE</span>
+                        <span class="stat-value" id="acRate">49.2%</span>
+                    </div>
+                </div>
+                <div class="ranking">
+                    <span class="neon-text">GLOBAL RANK</span>
+                    <span class="cyber-number" id="globalRank">#1,482,857</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>
+            <img src="assets/html.png" alt="HTML">
+            <p>HTML</p>
+        </li>
+        <li>
+            <img src="assets/css2.png" alt="CSS">
+            <p>CSS</p>
+        </li>
+        <li>
+            <img src="assets/javasc.png" alt="JavaScript">
+            <p>JavaScript</p>
+        </li>
+        <li>
+            <img src="assets/python.png" alt="Python">
+            <p>Python</p>
+        </li>
+    </ul>
+</section>
 
 <section id="contact" class="contact">
     <h2>Contact</h2>
-    <form action="mailto:nick007sbt@gmail.com" method="post" enctype="text/plain">
+    <form action="#" method="post">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
@@ -136,7 +189,7 @@
 <footer>
     <p>Connect with me on</p>
     <div class="social-icons">
-        <a href="https://github.com/Nick-Maro" target="_blank">GitHub</a> |
+        <a href="https://github.com/Nick-maro" target="_blank">GitHub</a> |
         <a href="mailto:nick007sbt@gmail.com">Email</a>
     </div>
     <a href="#" class="back-to-top">Back to Top</a>

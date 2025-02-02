@@ -557,3 +557,120 @@ footer .back-to-top:hover {
         padding: 15px;
     }
 }
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cyber-card {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cyber-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.3);
+}
+
+.glow-border {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 255, 153, 0.4),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.cyber-card:hover .glow-border {
+    left: 100%;
+}
+
+.stats-content h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.cyber-number {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px var(--primary-color);
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.difficulty-breakdown {
+    display: grid;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.diff-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 8px rgba(0, 255, 153, 0.2);
+}
+
+.neon-text {
+    text-shadow: 0 0 8px currentColor;
+}
+
+.easy { color: #00ff99; }
+.medium { color: #ffd700; }
+.hard { color: #ff6347; }
+
+.submission-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.stat {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.ranking {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
