@@ -90,3 +90,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Error fetching LeetCode stats:', error);
     }
 });
+if(window.innerWidth < 768) {
+    document.getElementById('prev').style.display = 'none';
+    document.getElementById('next').style.display = 'none';
+}
